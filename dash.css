@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+
+  /* Side Panel */
+  .side-panel {
+    width: 290px;
+    background-color: #0db751ee;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .com{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side-panel h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 20px; 
+    align-content: center;
+    justify-content: center;
+  }
+
+  .side-panel nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  /* From Uiverse.io by WhiteNervosa */ 
+  .side-panel button {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 800;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    align-items: flex-start;
+    text-align: left;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .side-panel button:focus,
+  .side-panel button:hover {
+    color: #fff;
+  }
+  
+  .side-panel button:focus:after,
+  .side-panel button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .side-panel button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .header .search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header .search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+
+  /* Welcome Card */
+  .content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  /* From Uiverse.io by SteveBloX */ 
+.card {
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(195, 238, 176, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(96, 201, 138, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+  
